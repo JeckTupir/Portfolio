@@ -1,11 +1,7 @@
 # 👨‍💻 Jestopher B. Dela Torre | Portfolio Website
 
-![Project Status](https://img.shields.io/badge/status-active-success?style=flat-square)
-![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)
-
 > A personal portfolio website showcasing my journey as an IT student, Web Developer, and QA Tester.
 
-![Portfolio Preview](./public/assets/preview.png)
 ## 📖 About The Project
 
 This repository contains the source code for my personal portfolio website. It serves as a central hub to demonstrate my technical skills, showcase my academic and personal projects, and list my certifications in AWS and ServiceNow.
