@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./public/assets/profile-avatar.png" type="image/png">
+    <title>Jestopher B. Dela Torre - Web Developer & QA Tester</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./styles.css">
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">JEST</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#education" class="nav-link">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <img src="./public/assets/hero-background-abstract.png" alt="Hero Background" class="hero-bg-img">
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="highlight">Jestopher B. Dela Torre</span>
+                </h1>
+                <div class="hero-subtitle">
+                    <span class="typing-text" id="typing-text"></span>
+                    <span class="cursor">|</span>
+                </div>
+                <p class="hero-description">
+                    Passionate IT student with hands-on experience in web development, backend logic, 
+                    system testing, and technical troubleshooting. Ready to bring innovative solutions to life.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="./public/assets/Resume.jpg" download="/images/Resume.jpg" class="btn btn-secondary">
+                        <i class="fas fa-download"></i> Download Resume
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="./public/assets/profile-avatar.png" alt="Jestopher Dela Torre" class="profile-img">
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Web Developer & QA Tester</h3>
+                    <p>
+                        I'm an IT student with hands-on experience in <strong>web development</strong>, 
+                        <strong>backend logic</strong>, <strong>system testing</strong>, and 
+                        <strong>technical troubleshooting</strong>. Skilled in Java, JavaScript, HTML/CSS, 
+                        and MySQL, with practical exposure through academic systems projects.
+                    </p>
+                    <p>
+                        I demonstrate strong problem-solving ability, fast learning pace, and versatility 
+                        across <strong>Web Dev</strong>, <strong>QA</strong>, and <strong>IT Support</strong> 
+                        roles. Certified in AWS Cloud Fundamentals and ServiceNow Now Assist for Creator.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">3+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">3+</span>
+                            <span class="stat-label">Certifications</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="skills-background">
+            <img src="./public/assets/skills-background.png" alt="Skills Background" class="skills-bg-img">
+        </div>
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Languages & Web</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">HTML/CSS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Java</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">MySQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Environment</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">VSCode</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">IntelliJ</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">GitHub</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Linux</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Knowledge Areas</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Data Structures & Algorithms</span>
+                        <span class="skill-tag">OOP</span>
+                        <span class="skill-tag">Networking</span>
+                        <span class="skill-tag">Data Analytics</span>
+                        <span class="skill-tag">Information Security</span>
+                        <span class="skill-tag">Systems Integration</span>
+                        <span class="skill-tag">AWS Cloud</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./public/assets/project-wildcats-preview.png" alt="WildCats CircuitHub">
+                        <div class="project-overlay">
+                            <a href="https://github.com/ElReyDeLosGorditos/WildCats-CircuitHub" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>WildCats CircuitHub</h3>
+                        <p>Equipment Borrowing System</p>
+                        <div class="project-description">
+                            <p>Developed backend logic supporting borrowing/return functions with manual QA testing to ensure system reliability. Collaborated with team to streamline the equipment borrowing process.</p>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">HTML/CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./public/assets/project-eduwheels-preview.jpg" alt="EduWheels">
+                        <div class="project-overlay">
+                            <a href="https://github.com/JeckTupir/IT342-EduWheels" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>EduWheels</h3>
+                        <p>School Vehicle Management System</p>
+                        <div class="project-description">
+                            <p>Full-stack contributor & feature implementer. Implemented new backend and frontend features, optimized workflows for smoother data handling, and enhanced UI/UX components.</p>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">CSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./public/assets/project-bcd-preview.png" alt="BCD Car Rental">
+                        <div class="project-overlay">
+                            <a href="https://github.com/Amarok1214/BCD" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>BCD Car Rental System</h3>
+                        <p>Web-based Car Rental Management</p>
+                        <div class="project-description">
+                            <p>Developed a web-based car rental management system with search, booking, and payment features. Built frontend pages and contributed to admin dashboard for managing vehicle inventory.</p>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+<section id="education" class="education">
+    <div class="container">
+        <h2 class="section-title">Education & Certifications</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Bachelor of Science in Information Technology</h3>
+                    <h4>Cebu Institute of Technology – University</h4>
+                    <span class="timeline-date">2021 – Present</span>
+                    <p>Currently pursuing my degree with focus on web development, system analysis, and software engineering principles.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>STEM Program</h3>
+                    <h4>Colegio de Santa Rita de San Carlos, Inc.</h4>
+                    <span class="timeline-date">2019 – 2021</span>
+                    <p>Completed Science, Technology, Engineering, and Mathematics program, building strong analytical and problem-solving foundations.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="certifications">
+            <h3>Certifications</h3>
+            <div class="cert-grid">
+                <!-- AWS Certification -->
+                <div class="cert-item">
+                    <div class="cert-badge">Verified</div>
+                    <i class="fab fa-aws"></i>
+                    <h4>AWS Cloud Fundamentals</h4>
+                    <span>Amazon Web Services - Beginner Level</span>
+                    <div class="cert-actions">
+                        <button class="cert-btn cert-btn-primary" onclick="openCertModal('aws')">
+                            <i class="fas fa-eye"></i> View Certificate
+                        </button>
+                        <a href="./certificates/aws-certificate.pdf" download class="cert-btn cert-btn-secondary tooltip">
+                            <i class="fas fa-download"></i> Download
+                            <span class="tooltiptext">Download PDF</span>
+                        </a>
+                        <a href="https://www.credly.com/badges/f90c2852-304b-4cab-a66a-47f0bcc5110f/public_url" target="_blank" class="cert-btn cert-btn-secondary tooltip">
+                            <i class="fas fa-shield-alt"></i> Verify
+                            <span class="tooltiptext">Verify on Credly</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ServiceNow Certification -->
+                <div class="cert-item">
+                    <div class="cert-badge">Verified</div>
+                    <i class="fas fa-cog"></i>
+                    <h4>ServiceNow Accreditation</h4>
+                    <span>Now Assist for Creator Implementation Delivery</span>
+                    <div class="cert-actions">
+                        <button class="cert-btn cert-btn-primary" onclick="openCertModal('servicenow')">
+                            <i class="fas fa-eye"></i> View Certificate
+                        </button>
+                        <a href="./public/certificates/servicenow-certificate.pdf" download class="cert-btn cert-btn-secondary tooltip">
+                            <i class="fas fa-download"></i> Download
+                            <span class="tooltiptext">Download PDF</span>
+                        </a>
+                        <a href="https://learning.servicenow.com/lxp/en/pages/nl-public-resume?id=nl_public&user=jeckers300527222" target="_blank" class="cert-btn cert-btn-secondary tooltip">
+                            <i class="fas fa-shield-alt"></i> Verify
+                            <span class="tooltiptext">Verify on ServiceNow</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- UXPH Certification -->
+                <div class="cert-item">
+                    <div class="cert-badge">Participant</div>
+                    <i class="fas fa-users"></i>
+                    <h4>UXHP Mini 2025</h4>
+                    <span>Certificate of Participation</span>
+                    <div class="cert-actions">
+                        <button class="cert-btn cert-btn-primary" onclick="openCertModal('uxhp')">
+                            <i class="fas fa-eye"></i> View Certificate
+                        </button>
+                        <a href="./public/certificates/uxhp-certificate.pdf" download class="cert-btn cert-btn-secondary tooltip">
+                            <i class="fas fa-download"></i> Download
+                            <span class="tooltiptext">Download PDF</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Certificate Modals -->
+<div id="modal-aws" class="cert-modal" onclick="closeCertModal('aws')">
+    <div class="cert-modal-content" onclick="event.stopPropagation()">
+        <span class="cert-modal-close" onclick="closeCertModal('aws')">&times;</span>
+        <img src="./public/certificates/aws-certificate.jpeg" alt="AWS Certificate" class="cert-modal-image">
+        <div class="cert-modal-info">
+            <h3>AWS Cloud Fundamentals</h3>
+            <p><strong>Issued by:</strong> Amazon Web Services</p>
+            <p><strong>Issue Date:</strong> October 6, 2025</p>
+            <div class="cert-modal-actions">
+                <a href="./public/certificates/aws-certificate.pdf" download class="cert-btn cert-btn-primary">
+                    <i class="fas fa-download"></i> Download PDF
+                </a>
+                <a href="https://www.credly.com/badges/f90c2852-304b-4cab-a66a-47f0bcc5110f/public_url" target="_blank" class="cert-btn cert-btn-secondary">
+                    <i class="fas fa-external-link-alt"></i> Verify on Credly
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal-servicenow" class="cert-modal" onclick="closeCertModal('servicenow')">
+    <div class="cert-modal-content" onclick="event.stopPropagation()">
+        <span class="cert-modal-close" onclick="closeCertModal('servicenow')">&times;</span>
+        <img src="./public/certificates/servicenow-certificate.png" alt="ServiceNow Certificate" class="cert-modal-image">
+        <div class="cert-modal-info">
+            <h3>ServiceNow Now Assist for Creator</h3>
+            <p><strong>Issued by:</strong> ServiceNow</p>
+            <p><strong>Issue Date:</strong> May 1, 2025</p>
+            <div class="cert-modal-actions">
+                <a href="./public/certificates/servicenow-certificate.pdf" download class="cert-btn cert-btn-primary">
+                    <i class="fas fa-download"></i> Download PDF
+                </a>
+                <a href="https://learning.servicenow.com/lxp/en/pages/nl-public-resume?id=nl_public&user=jeckers300527222" target="_blank" class="cert-btn cert-btn-secondary">
+                    <i class="fas fa-external-link-alt"></i> Verify Online
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal-uxhp" class="cert-modal" onclick="closeCertModal('uxhp')">
+    <div class="cert-modal-content" onclick="event.stopPropagation()">
+        <span class="cert-modal-close" onclick="closeCertModal('uxhp')">&times;</span>
+        <img src="./public/certificates/uxhp-certificate.png" alt="UXHP Mini 2025 Certificate" class="cert-modal-image">
+        <div class="cert-modal-info">
+            <h3>UXHP Mini 2025</h3>
+            <p><strong>Certificate Type:</strong> Certificate of Participation</p>
+            <p><strong>Event:</strong> UXPH Mini 2025: Cebu Conference</p>
+            <p><strong>Issue Date:</strong> 2025</p>
+            <p><strong>Participant:</strong> Jestopher B. Dela Torre</p>
+            <div class="cert-modal-actions">
+                <a href="./public/certificates/uxhp-certificate.pdf" download class="cert-btn cert-btn-primary">
+                    <i class="fas fa-download"></i> Download PDF
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology.</p>
+                    
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>San Carlos City, Negros Occidental<br>Currently Residing in Cebu City</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>09162906620</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>delatorretupir@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/jestopher-dela-torre-7a5037385" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/JeckTupir" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="from_name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="from_email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Jestopher B. Dela Torre. All rights reserved.</p>
+                <p>Designed & Built by Jestopher</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="./script.js"></script>
+</body>
+
+</html>
