@@ -40,7 +40,6 @@ document.addEventListener('DOMContentLoaded', function() {
     initNavigation();
     initTypingAnimation();
     initScrollAnimations();
-    initSkillBars();
     initContactForm();
     initSmoothScrolling();
 });
@@ -290,11 +289,11 @@ function initScrollAnimations() {
     }, observerOptions);
 
     // Add animation classes to elements
-    const animatedElements = document.querySelectorAll('.section-title, .about-text, .stat-item, .skill-category, .project-card, .timeline-item, .cert-item, .contact-info, .contact-form');
+    const animatedElements = document.querySelectorAll('.section-title, .about-text, .stat-item, .skill-category, .skill-icon-item, .project-card, .timeline-item, .cert-item, .contact-info, .contact-form');
     
     animatedElements.forEach((el, index) => {
         el.classList.add('fade-in');
-        el.style.transitionDelay = `${index * 0.1}s`;
+        el.style.transitionDelay = `${index * 0.05}s`;
         observer.observe(el);
     });
 
@@ -310,29 +309,8 @@ function initScrollAnimations() {
     });
 }
 
-// Skill bars animation
-function initSkillBars() {
-    const skillBars = document.querySelectorAll('.skill-progress');
-    
-    const skillObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const skillBar = entry.target;
-                const width = skillBar.getAttribute('data-width');
-                
-                setTimeout(() => {
-                    skillBar.style.width = width;
-                }, 500);
-                
-                skillObserver.unobserve(skillBar);
-            }
-        });
-    }, { threshold: 0.5 });
-
-    skillBars.forEach(bar => {
-        skillObserver.observe(bar);
-    });
-}
+// Skills section uses icon-based design with hover tooltips
+// No animation initialization needed
 
 // Certificate Modal Functions
 function openCertModal(certId) {
